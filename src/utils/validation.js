@@ -4,7 +4,7 @@ export const registerSchema = yup.object({
     name: yup
         .string()
         .required('Full name is required')
-        .min(2, 'Name must be at least 2 characters')
+        .min(3, 'Name must be at least 3 characters')
         .max(50, 'Name is too long')
         .matches(/^[a-zA-Z\s]*$/, 'Name can only contain letters and spaces'),
     
